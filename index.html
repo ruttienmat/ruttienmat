@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .service {
+            flex: 0 0 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
+        .locations {
+            margin-top: 20px;
+            list-style-type: none;
+        }
+        .locations li::before {
+            content: "• ";
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Financial Services</h1>
+    </header>
+    <div class="container">
+        <section class="services">
+            <div class="service">
+                <img src="withdraw.jpg" alt="Withdraw Service">
+                <h2>Withdraw Service</h2>
+                <p>Helps people withdraw money from their visa card with a fee from 1.8% - 2.5%</p>
+            </div>
+            <div class="service">
+                <img src="new-card.jpg" alt="New Visa Card Service">
+                <h2>New Visa Card Service</h2>
+                <p>Helps people create a new visa card with a high limit</p>
+            </div>
+        </section>
+        <section>
+            <h2>Where We Provide Services</h2>
+            <ul class="locations">
+                <li>Châu Đức</li>
+                <li>Cẩm Mỹ</li>
+                <li>Long Khánh</li>
+                <li>Xuân Lộc</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <a href="https://zalo.me/0868378363">
+                <img src="zalo-icon.png" alt="Zalo Icon"> Zalo: 0868378363
+            </a>
+        </section>
+    </div>
+</body>
+</html>
