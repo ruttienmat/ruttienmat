@@ -1,0 +1,21 @@
+<?php
+$xml = new XMLWriter();
+$xml->openURI("sitemap.xml");
+$xml->startDocument('1.0', 'UTF-8');
+$xml->startElement('urlset');
+$xml->writeAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+
+// Thêm các liên kết vào sitemap
+$links = array(
+    'https://www.ruttienmat.top',
+);
+
+foreach ($links as $link) {
+    $xml->startElement('url');
+    $xml->writeElement('loc', $link);
+    $xml->endElement();
+}
+
+$xml->endElement();
+$xml->endDocument();
+?>
